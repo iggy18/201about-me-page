@@ -1,0 +1,47 @@
+/* font-family: 'Gayathri', sans-serif; */
+
+ 
+
+#site-title {
+    color: white
+    
+    
+}
+
+body {
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    height: calc(100vh - 300px);
+}
+
+header {
+        background-color: #FBAB7E;
+        background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+        font-size: 40px;
+        border-radius: 100%;
+        margin: 20px;
+        text-align: center;
+        font-family: 'Gayathri', sans-serif;
+        border-style: dotted;
+        color: red;
+        filter: drop-shadow(20px 15px 6px #8a795d);
+}
+
+h2 {
+    color: purple;
+    font-family: 'Gayathri', sans-serif;
+}
+
+main{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    margin: 20px;
+    font-family: 'Gayathri', sans-serif;
+    text-align: center;
+    border-style: double;
+}
+
+footer {
+    text-align: center;
+    border-style: solid;
+}
