@@ -45,7 +45,7 @@ var guess4 = prompt('did I work on board the Victoria Clipper?').toLowerCase();
 var guess5 = prompt('do I hope to make my mom proud?').toLowerCase();
     if (guess5 === 'yes') {
         // console.log('thats correct');
-        alert('thats correct! thanks for playing, <3 LOVE YOU MOM!' + user);
+        alert('thats correct! thanks for playing,' + user + '. <3 LOVE YOU MOM!');
     } else {
         alert(' I do want to make my mom proud! <3 LOVE YOU MOM! thanks for playing ' + user);
     }
