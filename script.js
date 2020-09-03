@@ -1,5 +1,7 @@
 'use strict';
 
+var score = 0;
+
 var user = prompt('what is your name?');
     alert(' welcome, ' + user);
 
@@ -12,6 +14,7 @@ var game = confirm('would you like to play a guessing game?');
 
 var guess1 = prompt('answer yes, or no. did I used to live in Mississippi?').toLowerCase();
     if (guess1 === 'yes') {
+        score = score + 1;
         // console.log('thats correct');
         alert('thats correct!');
     } else {
@@ -20,6 +23,7 @@ var guess1 = prompt('answer yes, or no. did I used to live in Mississippi?').toL
 
 var guess2 = prompt('is snowbording my favorite athletic pastime?').toLowerCase();
     if (guess2 === 'yes') {
+        score = score + 1;
         // console.log('thats correct');
         alert('thats correct!');
     } else {
@@ -28,6 +32,7 @@ var guess2 = prompt('is snowbording my favorite athletic pastime?').toLowerCase(
 
 var guess3 = prompt('am I currently attending codefellows?').toLowerCase();
     if (guess3 === 'yes') {
+        score = score + 1;
         // console.log('thats correct');
         alert('thats correct!');
     } else {
@@ -36,6 +41,7 @@ var guess3 = prompt('am I currently attending codefellows?').toLowerCase();
 
 var guess4 = prompt('did I work on board the Victoria Clipper?').toLowerCase();
     if (guess4 === 'yes') {
+        score = score + 1;
         // console.log('thats correct');
         alert('thats correct!');
     } else {
@@ -44,8 +50,61 @@ var guess4 = prompt('did I work on board the Victoria Clipper?').toLowerCase();
 
 var guess5 = prompt('do I hope to make my mom proud?').toLowerCase();
     if (guess5 === 'yes') {
+        score = score + 1;
         // console.log('thats correct');
-        alert('thats correct! thanks for playing,' + user + '. <3 LOVE YOU MOM!');
+        alert('thats correct! thanks for playing, ' + user + '. <3 LOVE YOU MOM!');
     } else {
         alert(' I do want to make my mom proud! <3 LOVE YOU MOM! thanks for playing ' + user);
     }
+
+// var number = Math.floor(Math.random() * 10 + 1);
+// for (var i = 0; i < 4 ; i++) {
+//     var game2 = parseInt(prompt ('guess a number between 1 and 10'));
+//     if ( game2 === number ) {
+//         alert('thats correct!');
+//         score = score + 1;
+//         break;
+//     } else if ( game2 < number ) {
+//         alert('too low!');
+//     } else if (game2 > number) {
+//         alert('too high');
+//     }  else {
+//         alert('the correct answer was ' + number);
+//     }
+// }
+
+var correctNumber = Math.floor(Math.random() * 10 + 1);
+var guesses = 0;
+while (guesses <= 4) {
+    var game2 = parseInt(prompt ('guess a number between 1 and 10'));
+    if ( game2 === correctNumber ) {
+        alert('thats correct!');
+        score = score + 1;
+        break;
+    }  else if (guesses === 4){
+        alert('the correct answer was ' + correctNumber);
+    } else if ( game2 < correctNumber ) {
+        alert('too low!');
+    } else if (game2 > correctNumber) {
+        alert('too high');
+    }
+    guesses++
+
+}
+var ray = ['eyes', 'nose', 'mouth', 'lips', 'ears', 'beard', 'freckles', 'mole', 'scar', 'pimple', 'pimples']
+// var count = 0
+
+for (var i = 0; i < 6; i++) {
+    var game3 = prompt(' what feature can you find on a face?');
+    if (ray.includes(game3.toLowerCase())) {
+        alert('thats correct!');
+        score = score + 1;
+        break;
+    } else if (i === 5 && !ray.includes(game3.toLowerCase())) {
+        alert('you ran out of guesses, these were the answers: eyes, nose, mouth, lips, ears, beard, freckles, mole, scar, pimple, pimples');
+    } else {
+        alert('on what planet?');
+    }
+
+}
+alert('congrats! youre done answering questions. you got ' + score + ' correct answers!')

@@ -23,7 +23,7 @@ header {
         text-align: center;
         font-family: 'Gayathri', sans-serif;
         border-style: dotted;
-        color: red;
+        color:grey;
         filter: drop-shadow(20px 15px 6px #8a795d);
 }
 
@@ -39,9 +39,42 @@ main{
     font-family: 'Gayathri', sans-serif;
     text-align: center;
     border-style: double;
+    filter: drop-shadow(20px 15px 6px #8a795d);
+}
+
+.top {
+    font-family: 'Gayathri', sans-serif;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border: solid white thick;
+    filter: drop-shadow(20px 15px 6px #8a795d);
 }
 
 footer {
     text-align: center;
     border-style: solid;
+}
+
+.ex {
+    font-family: 'Gayathri', sans-serif;
+    color: bisque;
+    display: inline-block;
+    transform: translateX(300%);
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border: solid white thick;
+    width: 200px;
+    height: 150px;
+    margin: 30px;
+    padding-left: 10px;
+    filter: drop-shadow(20px 15px 6px #8a795d);
+}
+
+.edu {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    width:200px;
+    height: 150px;
+    border: solid white thick;
+    filter: drop-shadow(20px 15px 6px #8a795d);
 }
