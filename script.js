@@ -108,3 +108,4 @@ for (var i = 0; i < 6; i++) {
 
 }
 alert('congrats! youre done answering questions. you got ' + score + ' correct answers!')
+
