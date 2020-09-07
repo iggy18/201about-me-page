@@ -101,7 +101,7 @@ var ray = ['eyes', 'nose', 'mouth', 'lips', 'ears', 'beard', 'freckles', 'mole',
 for (var i = 0; i < 4; i++) {
     var game3 = prompt(' what feature can you find on a face?');
     if (ray.includes(game3.toLowerCase())) {
-        alert('thats correct! the possible answers were: eyes, nose, mouth, lips, ears, beard, freckles, mole, scar, pimple, pimples'');
+        alert ('thats correct! the possible answers were: eyes, nose, mouth, lips, ears, beard, freckles, mole, scar, pimple, pimples');
         score = score + 1;
         break;
     } else if (i === 3 && !ray.includes(game3.toLowerCase())) {
